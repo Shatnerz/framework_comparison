@@ -1,0 +1,7 @@
+CONFIG_SERVER public 13300
+
+# Setup/Teardown
+SETUP server.setup
+TEARDOWN server.teardown
+
+import route.micro
