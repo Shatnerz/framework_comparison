@@ -27,10 +27,10 @@ Raw Output
 
 Sanic
 -----
+.. code-block:: bash
 
-    wrk -t4 -c100 -d30s http://localhost:13300/
+    $ wrk -t4 -c100 -d30s http://localhost:13300/
 
-::
     Running 30s test @ http://localhost:13300/
       4 threads and 100 connections
       Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -43,10 +43,10 @@ Sanic
 
 Flask (No gunicorn)
 -------------------
+.. code-block:: bash
 
-    wrk -t4 -c100 -d30s http://localhost:13300/
+    $ wrk -t4 -c100 -d30s http://localhost:13300/
 
-::
     Running 30s test @ http://localhost:13300/
       4 threads and 100 connections
       Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -60,10 +60,10 @@ Flask (No gunicorn)
 
 Flask (gunicorn)
 ----------------
+.. code-block:: bash
 
-    wrk -t4 -c100 -d30s http://localhost:13300/
+    $ wrk -t4 -c100 -d30s http://localhost:13300/
 
-::
     Running 30s test @ http://localhost:13300/
       4 threads and 100 connections
       Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -76,15 +76,15 @@ Flask (gunicorn)
 
 aiohttp
 --------
+.. code-block:: bash
 
-    wrk -t4 -c100 -d30s http://localhost:13300/
+    $ wrk -t4 -c100 -d30s http://localhost:13300/
 
-::
     Running 30s test @ http://localhost:13300/
-      4 threads and 100 connections
-      Thread Stats   Avg      Stdev     Max   +/- Stdev
-        Latency    11.29ms    1.32ms  47.05ms   95.42%
-        Req/Sec     2.23k   114.43     2.51k    83.50%
+    4 threads and 100 connections
+    Thread Stats   Avg      Stdev     Max   +/- Stdev
+      Latency    11.29ms    1.32ms  47.05ms   95.42%
+      Req/Sec     2.23k   114.43     2.51k    83.50%
       266041 requests in 30.01s, 39.33MB read
     Requests/sec:   8863.93
     Transfer/sec:      1.31MB
@@ -92,10 +92,10 @@ aiohttp
 
 rhc
 ---
+.. code-block:: bash
 
-    wrk -t4 -c100 -d30s http://localhost:13300/
-    
-::
+    $ wrk -t4 -c100 -d30s http://localhost:13300/
+
     Running 30s test @ http://localhost:13300/
       4 threads and 100 connections
       Thread Stats   Avg      Stdev     Max   +/- Stdev
