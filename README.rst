@@ -10,7 +10,7 @@ Benchmarks
 +------------+---------------------------+----------------+---------------+
 | Flask_     | Python 2.7 (gunicorn)     | 11,184         | 9.67ms        |
 +------------+---------------------------+----------------+---------------+
-| aiohttp    | Python 3.5 + uvloop       | 8,864          | 11.29ms       |
+| aiohttp_   | Python 3.5 + uvloop       | 8,864          | 11.29ms       |
 +------------+---------------------------+----------------+---------------+
 | rhc_       | Python 2.7                | 7,357          | 21.25ms       |
 +------------+---------------------------+----------------+---------------+
@@ -19,7 +19,8 @@ Benchmarks
 
 .. _Sanic: https://github.com/channelcat/sanic
 .. _Flask: https://github.com/pallets/flask
-.. rhc: https://github.com/robertchase/rhc
+.. _rhc: https://github.com/robertchase/rhc
+.. _aiohttp: http://aiohttp.readthedocs.io/en/stable/
 
 
 Raw Output
